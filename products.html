@@ -9,35 +9,98 @@
 </head>
 
 <body>
-    <section id="header">
-        <div class="container">
+    <section>
+        <div class="container" id="container">
             <a href="index.html"><img  class="logo-img" src="ice-cream.avif" ></a>
             <div class="navbar">
                 <ul>
                     <a href="products.html">Products</a>
                     <a>Contact</a>
                     <a>About Us</a>
-                    <a class="right">Account</a>
                 </ul>
-
             </div>
         </div>
     </section>
 
     <section id="box">
         <div class="box">
-            <img class ="product-image" src="cones-2.png">
-            <img class ="product-image" src="classic-series-new.png">
-            <img class ="product-image" src="senior-sundaes-new.png">
-            <img class ="product-image" src="cups-new.png">
-            <img class ="product-image" src="exotica-home-new.png">
-            <img class ="product-image" src="Party-Packs-1.png">
+            <div class="product-box">
+                <img class ="product-image" src="cones-2.png">
+                <button class="btn">MoreInfo</button>
+            </div>
+            <div class="product-box mid">
+                <img class ="product-image" src="classic-series-new.png">
+                <button class="btn">MoreInfo</button>
+            </div>
+            <div class="product-box mid">
+                <img class ="product-image" src="senior-sundaes-new.png">
+                <button class="btn">MoreInfo</button>
+            </div>
+            <div class="product-box mid">
+                <img class ="product-image" src="cups-new.png">
+                <button class="btn">MoreInfo</button>
+            </div>
+            <div class="product-box mid">
+                <img class ="product-image" src="exotica-home-new.png">
+                <button class="btn">MoreInfo</button>
+            </div>
+            <div class="product-box mid">
+                <img class ="product-image" src="Party-Packs-1.png">
+                <button class="btn">MoreInfo</button>
+            </div>
+            <div class="product-box">
+                <img class ="product-image" src="cones-2.png">
+                <button class="btn">MoreInfo</button>
+            </div>
+            <div class="product-box mid">
+                <img class ="product-image" src="classic-series-new.png">
+                <button class="btn">MoreInfo</button>
+            </div>
+            <div class="product-box mid">
+                <img class ="product-image" src="senior-sundaes-new.png">
+                <button class="btn">MoreInfo</button>
+            </div>
+            <div class="product-box mid">
+                <img class ="product-image" src="cups-new.png">
+                <button class="btn">MoreInfo</button>
+            </div>
+            <div class="product-box mid">
+                <img class ="product-image" src="exotica-home-new.png">
+                <button class="btn">MoreInfo</button>
+            </div>
+            <div class="product-box mid">
+                <img class ="product-image" src="Party-Packs-1.png">
+                <button class="btn">MoreInfo</button>
+            </div>
+
+
+            <!-- 
+            
+           
+            
+            
             <img class ="product-image" src="Candies.png">
             <img class ="product-image" src="Family-Packs-1.png">
-            <img class ="product-image" src="takehome-tubs-home-1.png">
+            <img class ="product-image" src="takehome-tubs-home-1.png"> -->
         </div>
 
     </section>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("container");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+    </script>
+
+
 
 </body>
 </html>
